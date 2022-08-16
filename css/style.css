@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100%;
+    background-color: #204862;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+ }
+
+li{
+    list-style: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+  }
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.header{
+    grid-area: header;
+    background-color: rgb(178, 195, 81);
+}
+.navbar{
+    grid-area: navbar;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: tan;
+}
+.main{
+    grid-area: main;
+    background-color: salmon
+}
+.footer{
+    grid-area: footer;
+    background-color: blue;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "header" 50px
+    "navbar" 50px
+    "main" auto
+    "sidebar" 100px
+    "footer" 100px ;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar-links li {
+    list-style: none;
+
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(11, 98, 11);
+}
+
+
+@media (min-width:600px) {
+    .grid-container{
+    gap: 15px;
+    grid-template:
+    "header header" 50px
+    "navbar navbar" 50px
+    "sidebar main" auto
+    "footer footer" 100px /
+    200px auto;
+    }
+    
+}
+
+@media (min-width:900px) {
+    .grid-container{
+    grid-template:
+    "header header header" 50px
+    "navbar navbar navbar" 100px
+    "main main sidebar" auto
+    "footer footer footer" 100px /
+    200px auto 200px;
+    }
+
+ }
+
+ /*Registro*/
+
+.form-register{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 7px;
+
+}
+
+.form__titulo{
+    background: deepskyblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid crimson;
+}
+
+.contenedor-inputs{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+}
+
+
+.input-48{
+    width: 48%;
+}
+
+.input-100{
+    width: 100%;
+}
+
+.btn-enviar{
+    background: crimson;
+    color: #fff;
+    margin: auto;
+    padding: 10px 40px;
+    cursor:pointer;
+    font-size: 20px;
+}
+
+.btn-enviar:active{
+    transform:  scale(1.05);
+}
+
+
+.form__link{
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Seccion Economia */
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	
+}
+
+.card .textos {
+	height: 100%;
+	
+	
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+
+
+}
+
+.banner ul {
+	list-style: none;
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
+}
