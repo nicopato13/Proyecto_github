@@ -43,6 +43,24 @@ img {
     text-align: center;
 }
 
+.an_foto{
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-name: ani_foto;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani_foto{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(30px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
 
 .header{
     grid-area: header;
